@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <title>Teststing Pokedex</title>
+    <link rel="shortcut icon" href="./assets/pokeball.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+
+  <body>
+ 
+  <!--header section-->
+
+    <header class="header">
+        <div class="header-wrapper-left">
+            <img src="./assets/pokeball.png" alt="Pokeball" class="logo" width="100">
+            <h1>Testing Pokedex</h1>
+        </div>
+        <div class="header-wrapper-right">
+            <nav>
+                <ul class="nav-links">
+                    <li><h2><a href="index.html">Home</a></h2></li>
+                    <li><h2><a href="Favorites.html">Favorites</a></h2></li>
+                    <li><h2><a href="about.html">About</a></h2></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main class="main-content">
+        <section id="pokemonContainer" class="pokemon-container">
+          <ul id="pokemonList">
+            <li>testing list 1</li>
+            <li>testing list 2</li>
+            <li>testing list 3</li>
+          </ul>
+        </section>
+    
+        <aside class="lateral-menu">
+          <h2>Search & Filter</h2>
+          <form id="searchForm">
+            <div class="form-group">
+              <label for="searchInput">Search by Name or ID:</label>
+              <div class="form-input-button"> 
+                <input type="text" id="searchInput" placeholder="name or ID..." />
+                <button id="searchButton">Search</button>
+              </div>
+            </div>
+        
+            <div class="form-group">
+              <label for="typeSelect">Type:</label>
+              <select id="typeSelect" name="type">
+              </select>
+            </div>
+        
+            <div class="form-group">
+              <label for="areaSelect">Area:</label>
+              <select id="areaSelect" name="area">
+              </select>
+            </div>
+        
+            <button type="submit">Apply Filter</button>
+            <button id="resetButton">Reset Filters</button>
+
+          </form>
+        </aside>
+    
+        <button id="loadMoreButton">Load More</button>
+
+    </main>
+
+
+
+    <footer>
+        <p>Created by <a href="https://github.com/RayM11" > Ray</a> as a training project</p>
+        <p> A better pokedex can be found <a href="https://sg.portal-pokemon.com/play/pokedex">here </a> </p>
+    </footer>
+
+
+
+  </body>
+</html>

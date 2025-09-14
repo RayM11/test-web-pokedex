@@ -1,0 +1,159 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background: #f5f6fa;
+  color: #2d3436;
+  line-height: 1.5;
+}
+
+/* Header */
+.header {
+  background: #ef5350;
+  color: white;
+  padding: 0.7rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-wrapper-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-wrapper-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: text-decoration 0.3s, text-size-adjust 0.3s;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+  text-size-adjust: 110%;
+}
+
+/* Layout principal */
+.main-content {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* Lista de pokémon */
+.pokemon-container ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+  gap: 1rem;
+  list-style: none;
+}
+
+.pokemon-container li {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.pokemon-container li:hover {
+  transform: scale(1.10);
+}
+
+.pokemon-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
+  padding: 0.5rem 0;
+}
+
+.pokemon-card img {
+  object-fit: contain;
+}
+
+.types {
+  display: grid;
+  justify-content: center;
+  gap: 0.1rem;
+  margin-top: 0.1rem;
+}
+
+.type-icon {
+  width: 6rem;
+  height: 1.2rem;
+  object-fit: contain;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.07);
+}
+
+/* Aside */
+.lateral-menu {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.form-input-button {
+  display: flex;
+  gap: 0.5rem;
+}
+
+input, select, button {
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+button {
+  background: #ef5350;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#loadMoreButton {
+  width: 10rem;
+  margin-top: 0.1rem;
+  justify-self: center;
+}
+
+button:hover {
+  background: #d32f2f;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  background: #eee;
+}
